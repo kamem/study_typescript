@@ -1,11 +1,14 @@
+/// <reference path="jquery.d.ts" />
+
 var x:number = 10;
 
 // any type
 var x3:string,
 	str:string = "hello",
-	obj = null; 
-	
-	
+	obj = null;
+
+var test = $('.test');
+
 //関数を定義。 function 関数名(引数名:型...):戻り値
 function add(x:number, y:number):number {
     return x + y;
@@ -17,12 +20,12 @@ interface Point {
  x:number;
  y:number;
 }
- 
+
 function f(point:Point) {
   console.log(point.x);
   console.log(point.y);
 }
- 
+
 var o1 = {x:1,y:2};
 var o2:Point = {x:1,y:2};
 var o3 = <Point>{x:1,y:2};
@@ -35,7 +38,7 @@ interface Point2 {
  x:number;
  y?:number;
 }
- 
+
 //引数をPoint型でなく、下記のように書くことも可能
 function f2(point:{x:number;y?:number;}) {
 }

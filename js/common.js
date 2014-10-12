@@ -1,7 +1,10 @@
+/// <reference path="jquery.d.ts" />
 var x = 10;
 
 // any type
 var x3, str = "hello", obj = null;
+
+var test = $('.test');
 
 //関数を定義。 function 関数名(引数名:型...):戻り値
 function add(x, y) {
